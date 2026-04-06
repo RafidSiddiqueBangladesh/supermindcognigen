@@ -43,7 +43,10 @@ const Index = () => {
           <AnimateOnScroll animation="fade-up" duration={600}>
             <div className="neon-line max-w-xs mx-auto mb-8" />
             <p className="text-sm text-muted-foreground flex items-center justify-center gap-1.5">
-              {t.footerBuilt} <Heart size={13} className="text-primary" /> · © {new Date().getFullYear()}
+              <a href="https://rafidsiddiqueprofile.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors duration-300">
+                Built by Rafid Siddique
+              </a>
+              <Heart size={13} className="text-primary" /> · © {new Date().getFullYear()}
             </p>
           </AnimateOnScroll>
         </footer>
